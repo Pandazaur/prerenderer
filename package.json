@@ -1,0 +1,25 @@
+{
+  "name": "node-express-web-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "dev": "concurrently \"tsc --watch\" \"node dist/index.js\"",
+    "build": "tsc --project ./tsconfig.json",
+    "start": "node dist/index.js" 
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  
+  "dependencies": {
+    "playwright": "^1.40.1",
+    "concurrently": "^8.2.2"
+  },
+  "devDependencies": {
+    
+    "typescript": "^5.3.2",
+    "@types/node": "^20.10.0"
+  }
+}
